@@ -1,10 +1,3 @@
-# `cpsx` (Copy Suffix)
+# Dotfiles (WIP)
 
-Copy from location to another, while retaining some file structure.
-
-## Usage
-
-```sh
-# Creates ~/.dotfiles/path/to/file.json
-cpsx ~/path/to/file.json ~/.dotfiles ~
-```
+Mixing the workflow of a dotfiles manager with the innovation of gnu stow.
