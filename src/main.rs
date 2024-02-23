@@ -1,4 +1,4 @@
-use std::{fs::copy, path::PathBuf};
+use std::path::PathBuf;
 
 use clap::Parser;
 
@@ -11,13 +11,4 @@ struct Args {
 
 fn main() {
     let mut args = Args::parse();
-
-    let source = args.source;
-
-    let suffix = source.clone();
-    let suffix = suffix.strip_prefix(args.prefix).unwrap();
-
-    args.target.push(&suffix);
-
-    copy(source, args.target).unwrap();
 }
